@@ -7,11 +7,11 @@ num_3 = float(input('Введите третье число: '))
 max_num = max(num_1, num_2, num_3)
 min_num = min(num_1, num_2, num_3)
 
-if num_1 > min_num and num_1 < max_num:
+if max_num > num_1 > min_num:
     print(f'{num_1} - среднее число.')
-elif num_2 > min_num and num_2 < max_num:
+elif max_num > num_2 > min_num:
     print(f'{num_2} - среднее число.')
-elif num_3 > min_num and num_3 < max_num:
+elif max_num > num_3 > min_num:
     print(f'{num_3} - среднее число.')
 else:
     print('Среднее число не найдено.')
