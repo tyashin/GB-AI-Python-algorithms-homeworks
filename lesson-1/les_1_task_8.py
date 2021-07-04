@@ -15,3 +15,7 @@ elif max_num > num_3 > min_num:
     print(f'{num_3} - среднее число.')
 else:
     print('Среднее число не найдено.')
+
+
+# или более простой вариант :))
+print(f'Среднее число: {num_1 + num_2 + num_3 - max_num - min_num }')
