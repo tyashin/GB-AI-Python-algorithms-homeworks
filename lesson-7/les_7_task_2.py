@@ -5,7 +5,7 @@
 
 '''
 
-from random import randint
+from random import uniform
 
 
 def merge_sort(arr):
@@ -32,6 +32,6 @@ def merge_sort(arr):
 
 
 SIZE = 10
-array = [randint(0, 51) for i in range(SIZE)]
+array = [uniform(0, 50) for i in range(SIZE)]
 print(f'До сортировки: {array}')
 print(f'После сортировки: {merge_sort(array)}')
