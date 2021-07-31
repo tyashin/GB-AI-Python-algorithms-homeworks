@@ -25,6 +25,7 @@ def merge_sort(arr):
         else:
             result.append(left[i])
             i += 1
+
     result.extend(left[i:])
     result.extend(right[j:])
 
@@ -32,6 +33,6 @@ def merge_sort(arr):
 
 
 SIZE = 10
-array = [uniform(0, 50) for i in range(SIZE)]
+array = [uniform(0, 51) for i in range(SIZE)]
 print(f'До сортировки: {array}')
 print(f'После сортировки: {merge_sort(array)}')

@@ -9,12 +9,7 @@ b. постарайтесь сделать алгоритм умнее, но п�
 
 '''
 
-
 from random import randint
-
-SIZE = 10
-array = [randint(-100, 101) for i in range(SIZE)]
-print(f'До сортировки: {array}')
 
 
 def bubble_sort(array):
@@ -31,4 +26,7 @@ def bubble_sort(array):
     return array
 
 
+SIZE = 10
+array = [randint(-100, 101) for i in range(SIZE)]
+print(f'До сортировки: {array}')
 print(f'После сортировки: {bubble_sort(array)}')
