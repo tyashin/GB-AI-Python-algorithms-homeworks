@@ -1,3 +1,3 @@
-## GeekBrains course [Алгоритмы и структуры данных на Python](https://gb.ru/courses/264) homeworks
+## GeekBrains course [Методы сбора и обработки данных из сети Интернет](https://gb.ru/courses/498) homeworks
 
 WIP
