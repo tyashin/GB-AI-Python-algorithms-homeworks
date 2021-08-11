@@ -15,7 +15,7 @@ def count_substrings(string: str) -> int:
     s_length = len(string)
     assert s_length, "Введена пустая строка!"
     string_hash = sha1(string.encode("utf-8")).hexdigest()
-    substrings = [(string[x:y]).strip() for x, y in combinations(
+    substrings = [(string[x:y]) for x, y in combinations(
             range(len(string) + 1), r = 2)]
 
     result = []
@@ -24,7 +24,7 @@ def count_substrings(string: str) -> int:
         used = False
         substring_hash = sha1(i.encode("utf-8")).hexdigest()
 
-        if substring_hash == string_hash and i == string:
+        if (substring_hash == string_hash and i == string) or (not i.strip()):
             continue
 
         for j in result:
